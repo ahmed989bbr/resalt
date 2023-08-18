@@ -221,7 +221,7 @@ console.log(navh)
         resultDiv.className = "result";
         resultDiv.style.direction = "rtl";
         resultDiv.innerHTML = `
-                <h3>${studentInfo.name}</h3>
+                <p>${studentInfo.name}</p>
                 <p>المعدل: ${studentInfo.average}</p>
                 
                 <ul class="ude" style=" padding: 10px; justify-content: space-evenly; margin: 4px; align-items: center;">
@@ -230,7 +230,7 @@ console.log(navh)
                         ([subject, grade]) =>
                           `<li  class = "degr" style="    padding: 11px;
                           box-sizing: border-box;
-                          width: 65%;
+                          width: 80%;
                           margin: 2px;
                           border: 1px solid;">   ${subject}: ${grade}</li><br>`
                       )
