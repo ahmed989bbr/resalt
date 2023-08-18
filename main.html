@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sty.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="logo">
+          <img class="img" src="1.jpeg" alt="" />
+          <figcaption class="figcaption">
+            المعهد العالي للعلوم التجارية
+          </figcaption>
+        </div>
+        <nav class="list">
+          <ul>
+            <li><a href="main.html">الفرقة الأولى نظم</a></li>
+            <li><a href="2.html">الفرقة التانية نظم</a></li>
+            <li><a href="3.html">الفرقة التالته نظم</a></li>
+            <li><a href="4.html">الفرقة الرابعة نظم</a></li>
+          </ul>
+        </nav>
+      </div>
+    </nav>
+    <main>
+      <nav class="list-h">
+        <ul>
+          <li><a href="#">الفرقة الأولى نظم</a></li>
+          <li><a href="#">الفرقة التانية نظم</a></li>
+          <li><a href="#">الفرقة التالته نظم</a></li>
+          <li><a href="#">الفرقة الرابعة نظم</a></li>
+        </ul>
+      </nav>
+      <div class="container natega">
+        <h1>نتيجة الفرقة الأولى نظم</h1>\
+
+         <label for="seat-number">ادخل رقم الجلوس</label>
+         <input type="number" id="seat-number" />
+         <br />
+         <button id="search-button">استعلام</button>
+
+        <div id="result-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js">
+
+    //   // قم بإنشاء كائن لتخزين معلومات الطلاب والنتائج
+    //   const studentData = {
+    //       "22": {
+    //           name: "اسم الطالب 1",
+    //           average: 85,
+    //           subjects: {
+    //               "مادة 1": "جيد جدًا",
+    //               "مادة 2": "ممتاز",
+    //               // ... وهكذا للمواد الأخرى
+    //           }
+    //       },
+    //       "رقم القومي 2": {
+    //           name: "اسم الطالب 2",
+    //           average: 92,
+    //           subjects: {
+    //               "مادة 1": "ممتاز",
+    //               "مادة 2": "ممتاز",
+    //               // ... وهكذا للمواد الأخرى
+    //           }
+    //       },
+    //       // ... وهكذا للطلاب الأخرين
+    //   };
+
+    //   // اجلب عنصر الإدخال وزر الاستعلام من الصفحة
+    //   const seatNumberInput = document.getElementById("seat-number");
+    //   const searchButton = document.getElementById("search-button");
+    //   const resultContainer = document.getElementById("result-container");
+
+    //   // اضف حدث النقر على زر الاستعلام
+    //   searchButton.addEventListener("click", () => {
+    //       const seatNumber = seatNumberInput.value;
+    //       const studentInfo = studentData[seatNumber];
+        
+    //       if (studentInfo) {
+    //           const resultDiv = document.createElement("div");
+    //           resultDiv.className = "resalt"
+    //           resultDiv.style.direction = "rtl"
+    //           resultDiv.innerHTML = `
+    //               <h2>${studentInfo.name}</h2>
+    //               <p>المعدل: ${studentInfo.average}</p>
+    //               <h3>نتائج المواد:</h3>
+    //               <ul style = 'display: flex;padding: 10px;justify-content: space-evenly;margin: 4px;align-items: center;' >
+    //                   ${Object.entries(studentInfo.subjects)
+    //                       .map(([subject, grade]) => `<li style = '    padding: 10px;margin: 4px;border: 1px solid;' >${subject}: ${grade}</li>`)
+    //                       .join("")}
+    //               </ul>
+    //           `;
+    //           resultContainer.innerHTML = "";
+    //           resultContainer.appendChild(resultDiv);
+   
+    //       } else {
+    //           resultContainer.innerHTML = "<p>لا توجد معلومات لهذا الرقم القومي.</p>";
+    //       }
+    //   });
+    </script>
+  </body>
+</html>

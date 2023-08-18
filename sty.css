@@ -1,0 +1,210 @@
+/* قواعد CSS العامة */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(125, 166, 241);
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+.nav{
+    background-color: rgb(125, 166, 241);
+}
+.nav .img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 0 46px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav .figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bolder;
+    height: 100%;
+}
+
+ul li a:hover {
+    background-color: #1736c0;
+    color: aliceblue;
+}
+.list-h {
+    display: none;
+}
+.natega {
+    height: 550px;
+    margin-top: 148px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.natega h1 {
+    font-size: 4rem;
+    padding: 30px;
+}
+
+.natega label {
+    font-size: 3rem;
+    padding: 10px;
+    margin: 10px;
+}
+
+.natega input {
+    font-size: 2rem;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.natega button {
+    font-size: 2rem;
+    padding: 10px;
+    background-color: #3969a0;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.natega button:hover {
+    background-color: green;
+    color: aliceblue;
+}
+
+#result-container {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+/* قواعد CSS للهواتف المحمولة */
+
+@media (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+
+    .nav .img {
+        width: 40px;
+        height: 40px;
+        margin: 0 146px;
+        margin-bottom: 5px;
+    }
+
+    nav .figcaption {
+        font-size: 18px;
+        margin-left: 5px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .natega {
+        margin-top: 9px;
+    }
+
+    .natega h1 {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .natega label {
+        font-size: 2rem;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .natega input {
+        font-size: 1rem;
+        padding: 3px;
+        margin-bottom: 5px;
+    }
+
+    .natega button {
+        font-size: 1.8rem;
+        padding: 6px;
+    }
+
+    #result-container {
+        font-size: 1.8rem;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .list-h {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        text-decoration: none;
+        color: #000000;
+        padding: 10px;
+        font-size: 24px;
+        font-weight: bolder;
+        height: 100%;
+        transition: background-color 0.3s ease;
+        width: 100%;
+        border-bottom: 2px solid rgb(61, 61, 75);
+    }
+
+    .list-h ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-h ul li{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+
+    .list-h ul li:first-child {
+        margin-top: 20px;
+    }
+    .ude{
+        display: contents;
+    }
+    
+
+
+}
