@@ -223,15 +223,15 @@ console.log(navh)
         resultDiv.innerHTML = `
                 <h3>${studentInfo.name}</h3>
                 <p>المعدل: ${studentInfo.average}</p>
-                <h4>نتائج المواد:</h4>
+                
                 <ul class="ude" style=" padding: 10px; justify-content: space-evenly; margin: 4px; align-items: center;">
                     ${Object.entries(studentInfo.subjects)
                       .map(
                         ([subject, grade]) =>
                           `<li  class = "degr" style="    padding: 11px;
                           box-sizing: border-box;
-                          width: 69%;
-                          margin: 5px;
+                          width: 65%;
+                          margin: 2px;
                           border: 1px solid;">   ${subject}: ${grade}</li><br>`
                       )
                       .join("")}
