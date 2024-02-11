@@ -7,6 +7,7 @@
 }
 body{
     background-color: rgb(125, 166, 241);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container {
     width: 100%;
@@ -15,7 +16,7 @@ body{
     
 }
 .nav{
-    background-color: rgb(125, 166, 241);
+    background-color: rgba(99, 142, 222, 0.623);
 }
 .nav .img {
     border-radius: 50%;
@@ -67,7 +68,7 @@ ul li a:hover {
     display: none;
 }
 .natega {
-    height: 550px;
+    /* height: 550px; */
     margin-top: 148px;
     display: flex;
     flex-direction: column;
@@ -111,6 +112,14 @@ ul li a:hover {
 #result-container {
     font-size: 2rem;
     margin-top: 20px;
+    
+}
+.degr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
 }
 
 /* قواعد CSS للهواتف المحمولة */
@@ -168,6 +177,10 @@ ul li a:hover {
     }
 }
 
+result{
+    display: flex;
+    flex-direction: column;
+}
 @media (max-width: 767px) {
     .list-h {
         display: flex;
@@ -207,4 +220,15 @@ ul li a:hover {
     
 
 
+}
+
+
+
+select{
+    border: none;
+    outline: none;
+    direction: rtl;
+    font-size: 24px;
+    font-weight: bolder;
+    background-color: transparent;
 }
